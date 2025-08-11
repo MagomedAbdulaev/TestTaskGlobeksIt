@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "ProximaNovaBold";
+    src:
+        url("../public/fonts/ProximaNova/proximanova_bold.woff") format("woff"),
+        url("../public/fonts/ProximaNova/proximanova_bold.ttf") format("truetype"),
+        url("../public/fonts/ProximaNova/proximanova_bold.otf") format("opentype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "ProximaNovaRegular";
+    src:
+        url("../public/fonts/ProximaNova/proximanova_regular.woff") format("woff"),
+        url("../public/fonts/ProximaNova/proximanova_regular.ttf") format("truetype"),
+        url("../public/fonts/ProximaNova/proximanova_regular.otf") format("opentype");
+    font-weight: 400;
+}
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Цвета  */
+  --color-border-input: #D4DEFE;
+  --color-title: #262C40;
+  --color-paragraph-value: #8189A3;
+}
+
+.wrapper{
+  font-family: 'ProximaNovaRegular', sans-serif;
+  padding: clamp(16px, 3vw, 64px) clamp(20px, 3vw, 80px);
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.not_found{
+  text-align: center;
+  font-size: 32px;
+  margin-top: 20px;
+  font-family: 'ProximaNovaBold', sans-serif;
+}

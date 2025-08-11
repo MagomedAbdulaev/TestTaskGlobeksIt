@@ -1,0 +1,42 @@
+.usercards{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: clamp(15px, 3vw, 25px);
+}
+
+.usercard{
+  cursor: pointer;
+  padding: clamp(15px, 3vw, 25px);
+}
+
+.usercards .usercard__title{
+  color: var(--color-title);
+  font-size: clamp(18px, 3vw, 24px);
+  font-family: 'ProximaNovaBold', sans-serif;
+  margin-bottom: 10px;
+}
+
+.usercards .usercard__item{
+  margin-top: 14px;
+  display: flex;
+  gap: 14px;
+}
+
+.usercard .item__value{
+  color: var(--color-paragraph-value);
+  font-size: 14px;
+}
+
+.usercard .item__image{
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 768px) {
+  
+  .usercards{
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  }
+
+}
