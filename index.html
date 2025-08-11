@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Список сотрудников</title>
+</head>
+<body>
+
+<%
+    var request = "for $c in collaborators return $c/fullname";
+    var result = XQuery(request);
+%>
+
+<h1>Список сотрудников</h1>
+
+<% for (var i = 0; i < result.length; i++) { %>
+    <%= result[i] %><br>
+<% } %>
+
+</body>
+</html>
